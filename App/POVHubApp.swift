@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+
 @main
 struct POVHubApp: App {
     var sharedModelContainer: ModelContainer = {
