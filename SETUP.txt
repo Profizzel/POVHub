@@ -1,0 +1,10 @@
+This is a Swift Package manifest for easy Xcode setup without needing to create project manually.
+
+To create Xcode project:
+1. Open Xcode > Create new project > App > SwiftUI > Name: POVHub
+2. Add Widget Extension target: File > New > Target > Widget Extension > Name: POVWidget
+3. Include Shared files in BOTH targets (check both boxes)
+4. Add SwiftData capability
+5. For real glasses later, add SPM: https://github.com/facebook/meta-wearables-dat-ios
+
+For now, this scaffold works with no external dependencies - uses iPhone camera as mock glasses.

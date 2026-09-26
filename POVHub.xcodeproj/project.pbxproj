@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 56;
+    objects = {
+
+/* Begin PBXBuildFile section */
+        111111111111111111111111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222222 /* ContentView.swift */; };
+        111111111111111111111112 /* POVHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222223 /* POVHubApp.swift */; };
+        111111111111111111111113 /* FrameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222224 /* FrameRouter.swift */; };
+        111111111111111111111114 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222225 /* LiveActivityManager.swift */; };
+        111111111111111111111115 /* StreamingCoreFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222226 /* StreamingCoreFacade.swift */; };
+        111111111111111111111116 /* MemoryTagModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222227 /* MemoryTagModule.swift */; };
+        111111111111111111111117 /* SafetyCamModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222228 /* SafetyCamModule.swift */; };
+        111111111111111111111118 /* POVAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222222222222222222222229 /* POVAttributes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        222222222222222222222222 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+        222222222222222222222223 /* POVHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POVHubApp.swift; sourceTree = "<group>"; };
+        222222222222222222222224 /* FrameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameRouter.swift; sourceTree = "<group>"; };
+        222222222222222222222225 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+        222222222222222222222226 /* StreamingCoreFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingCoreFacade.swift; sourceTree = "<group>"; };
+        222222222222222222222227 /* MemoryTagModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryTagModule.swift; sourceTree = "<group>"; };
+        222222222222222222222228 /* SafetyCamModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCamModule.swift; sourceTree = "<group>"; };
+        222222222222222222222229 /* POVAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POVAttributes.swift; sourceTree = "<group>"; };
+        333333333333333333333333 /* POVHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POVHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        444444444444444444444444 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        555555555555555555555555 = {
+            isa = PBXGroup;
+            children = (
+                555555555555555555555556 /* App */,
+                555555555555555555555557 /* Core */,
+                555555555555555555555558 /* Modules */,
+                555555555555555555555559 /* Shared */,
+                666666666666666666666666 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        555555555555555555555556 /* App */ = {
+            isa = PBXGroup;
+            children = (
+                222222222222222222222222 /* ContentView.swift */,
+                222222222222222222222223 /* POVHubApp.swift */,
+            );
+            path = App;
+            sourceTree = "<group>";
+        };
+        555555555555555555555557 /* Core */ = {
+            isa = PBXGroup;
+            children = (
+                222222222222222222222224 /* FrameRouter.swift */,
+                222222222222222222222225 /* LiveActivityManager.swift */,
+                222222222222222222222226 /* StreamingCoreFacade.swift */,
+            );
+            path = Core;
+            sourceTree = "<group>";
+        };
+        555555555555555555555558 /* Modules */ = {
+            isa = PBXGroup;
+            children = (
+                222222222222222222222227 /* MemoryTagModule.swift */,
+                222222222222222222222228 /* SafetyCamModule.swift */,
+            );
+            path = Modules;
+            sourceTree = "<group>";
+        };
+        555555555555555555555559 /* Shared */ = {
+            isa = PBXGroup;
+            children = (
+                222222222222222222222229 /* POVAttributes.swift */,
+            );
+            path = Shared;
+            sourceTree = "<group>";
+        };
+        666666666666666666666666 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                333333333333333333333333 /* POVHub.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+        777777777777777777777777 /* POVHub */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 888888888888888888888888 /* Build configuration list for PBXNativeTarget "POVHub" */;
+            buildPhases = (
+                999999999999999999999999 /* Sources */,
+                444444444444444444444444 /* Frameworks */,
+                AAAAAAAAAAAAAAAAAAAAAAAA /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = POVHub;
+            productName = POVHub;
+            productReference = 333333333333333333333333 /* POVHub.app */;
+            productType = "com.apple.product-type.application";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        BBBBBBBBBBBBBBBBBBBBBBBB /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                BuildIndependentTargetsInParallel = 1;
+                LastSwiftUpdateCheck = 1540;
+                LastUpgradeCheck = 1540;
+                TargetAttributes = {
+                    777777777777777777777777 = {
+                        CreatedOnToolsVersion = 15.4;
+                    };
+                };
+            };
+            buildConfigurationList = CCCCCCCCCCCCCCCCCCCCCCCC /* Build configuration list for PBXProject "POVHub" */;
+            compatibilityVersion = "Xcode 14.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 555555555555555555555555;
+            productRefGroup = 666666666666666666666666 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                777777777777777777777777 /* POVHub */,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+        AAAAAAAAAAAAAAAAAAAAAAAA /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        999999999999999999999999 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                111111111111111111111118 /* POVAttributes.swift in Sources */,
+                111111111111111111111113 /* FrameRouter.swift in Sources */,
+                111111111111111111111115 /* StreamingCoreFacade.swift in Sources */,
+                111111111111111111111114 /* LiveActivityManager.swift in Sources */,
+                111111111111111111111116 /* MemoryTagModule.swift in Sources */,
+                111111111111111111111117 /* SafetyCamModule.swift in Sources */,
+                111111111111111111111112 /* POVHubApp.swift in Sources */,
+                111111111111111111111111 /* ContentView.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+        DDDDDDDDDDDDDDDDDDDDDDDD /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                GENERATE_INFOPLIST_FILE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                MARKETING_VERSION = 1.0;
+                SWIFT_VERSION = 5.0;
+            };
+            name = Debug;
+        };
+        EEEEEEEEEEEEEEEEEEEEEEEE /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                GENERATE_INFOPLIST_FILE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                MARKETING_VERSION = 1.0;
+                SWIFT_VERSION = 5.0;
+            };
+            name = Release;
+        };
+        FFFFFFFFFFFFFFFFFFFFFFFF /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CODE_SIGN_STYLE = Automatic;
+                GENERATE_INFOPLIST_FILE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = com.povhub.app;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        000000000000000000000001 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CODE_SIGN_STYLE = Automatic;
+                GENERATE_INFOPLIST_FILE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = com.povhub.app;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        CCCCCCCCCCCCCCCCCCCCCCCC /* Build configuration list for PBXProject "POVHub" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                DDDDDDDDDDDDDDDDDDDDDDDD /* Debug */,
+                EEEEEEEEEEEEEEEEEEEEEEEE /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        888888888888888888888888 /* Build configuration list for PBXNativeTarget "POVHub" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                FFFFFFFFFFFFFFFFFFFFFFFF /* Debug */,
+                000000000000000000000001 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+/* End XCConfigurationList section */
+    };
+    rootObject = BBBBBBBBBBBBBBBBBBBBBBBB /* Project object */;
+}
