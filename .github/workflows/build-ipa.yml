@@ -8,18 +8,9 @@ jobs:
     runs-on: macos-14
     steps:
       - uses: actions/checkout@v4
-      - name: Find Xcode project
-        id: find
-        run: |
-          PROJECT=$(find . -name "*.xcodeproj" | head -1)
-          echo "project_path=$PROJECT" >> $GITHUB_OUTPUT
-          echo "project_dir=$(dirname "$PROJECT")" >> $GITHUB_OUTPUT
       - name: Build POVHub
         run: |
-          PROJECT="${{ steps.find.outputs.project_path }}"
-          DIR="${{ steps.find.outputs.project_dir }}"
-          cd "$DIR"
-          xcodebuild -project "$(basename "$PROJECT")" -target POVHub -configuration Release -sdk iphoneos -destination "generic/platform=iOS" CONFIGURATION_BUILD_DIR=build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" CODE_SIGN_STYLE=Manual
+          xcodebuild -project POVHub.xcodeproj -target POVHub -configuration Release -sdk iphoneos -destination "generic/platform=iOS" CONFIGURATION_BUILD_DIR=build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" CODE_SIGN_STYLE=Manual
       - name: Package IPA
         run: |
           APP=$(find . -name "POVHub.app" -type d | head -1)

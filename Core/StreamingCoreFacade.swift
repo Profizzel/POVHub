@@ -3,6 +3,7 @@ import AVFoundation
 import CoreMedia
 import CoreImage
 import ImageIO
+import UIKit
 
 // MARK: - StreamingCoreFacade - Mock + Real DAT path + iPhone camera fallback
 // This lets you test locally FREE without glasses or DAT approval
@@ -23,8 +24,20 @@ final class StreamingCoreFacade: NSObject {
     
     // Mock: replay video file as CMSampleBuffer
     func startMockStream() {
-        // For v1, we use iPhone camera as mock if no video file
-        startiPhoneCamera()
+        requestCameraAndStart()
+    }
+    
+    func requestCameraAndStart() {
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+        case .authorized:
+            startiPhoneCamera()
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+                if granted { self?.startiPhoneCamera() }
+            }
+        default:
+            print("Camera denied - add NSCameraUsageDescription")
+        }
     }
     
     func startiPhoneCamera() {
