@@ -1,6 +1,7 @@
 import Foundation
 import AVFoundation
 import CoreMedia
+import CoreImage
 
 // MARK: - StreamingCoreFacade - Mock + Real DAT path + iPhone camera fallback
 // This lets you test locally FREE without glasses or DAT approval
